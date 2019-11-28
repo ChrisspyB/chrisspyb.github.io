@@ -1,6 +1,11 @@
 body {
     margin: 60px auto;
-    width: 50%;
+    /*width: 50em;*/
+    max-width:50em;
+
+     /*position:relative;*/
+     /*margin-left:0;*/
+     width:calc(100% - 26px);
     font-family: Roboto, Tahoma, Arial, sans-serif;
 
     color: #ebd4cb;
@@ -14,9 +19,13 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    color: #ebd4cb;
 }
 a {
     text-decoration: none;
+    color: #d81e5b;
+}
+a.header-link{
     color: #ebd4cb;
 }
 a:hover {
@@ -38,6 +47,7 @@ footer {
 a.blog-title{
     text-decoration: none;
     font-style: italic;
+    /*color: #d81e5b;*/
 
 }
 a.blog-title:hover{
