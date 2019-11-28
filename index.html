@@ -3,14 +3,14 @@ layout: default
 title: Home
 ---
 <div>
-	<h1>Hi, I'm Chris.</h1>
+	<h1>Posts</h1>
 </div>
 <div>
 	<ul class="posts">
 	  {% for post in site.posts %}
 	    <li>
-	    	<span>{{ post.date | date_to_string }}</span> : <a href="{{ post.url }}" title="{{ post.title }}" style="blog-title">{{ post.title }}</a>
-	    	<p style="blog-desc">{{ post.desc }}</p>
+	    	<span>{{ post.date | date_to_string }}</span> : <a href="{{ post.url }}" title="{{ post.title }}" class="blog-title">{{ post.title }}</a>
+	    	<p class="blog-desc">{{ post.desc }}</p>
 	    </li>
 	  {% endfor %}
 	</ul>

@@ -1,1 +1,4 @@
 _site/
+_private/
+.DS_STORE
+Gemfile.lock
